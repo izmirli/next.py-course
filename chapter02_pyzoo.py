@@ -67,22 +67,21 @@ class Animal:
 
     def get_name(self):
         """Return animal's name.
-        :param self: reference to the object
-        :return: Value of name attribute.
+        :return: Value of _name attribute.
         :rtype: str
         """
         return self._name
 
     def is_hungry(self):
         """Check if animal is hungry.
-        :return: True if hunger value is more than 0. False otherwise.
+        :return: True if _hunger value is more than 0. False otherwise.
         :rtype: bool
         """
         return self._hunger > 0
 
     def feed(self):
         """Feed animal, decrease the value of its _hunger attributes by 1.
-        Note! hanger value might become negative by using this method.
+        Note! _hanger value might become negative by using this method.
         :return: None
         """
         self._hunger -= 1
@@ -106,7 +105,7 @@ class Dog(Animal):
 
     @staticmethod
     def fetch_stick():
-        """Print dog's  after returning the stick.
+        """Print dog's thoughts after returning the stick.
         :return: None
         """
         print('There you go, sir!')

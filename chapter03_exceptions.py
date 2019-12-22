@@ -22,7 +22,8 @@ def raise_assertion_error_exception():
 
 # ImportError (as ModuleNotFoundError)
 def raise_import_error_exception():
-    import bogus_module
+    # import bogus_module
+    from sys import bogus
 
 
 # IOError/OSError (as FileNotFoundError)

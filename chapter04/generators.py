@@ -157,10 +157,3 @@ for i in range(1000000 * 10):
     timestamp = next(date_gen)
     if i % 1000000 == 0:
         print(timestamp)
-
-
-with open("capitals.txt") as file:
-    single_line_gen = (line for line in file)
-    capitals_and_cities = (l.replace("\n", "").split(",") for l in single_line_gen)
-
-    capitals_and_citiez = (l.strip().split(",") for l in single_line_gen)

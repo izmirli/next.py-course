@@ -1,4 +1,4 @@
-from chapter06_greetingcard import GreetingCard
+from greetingcard import GreetingCard
 
 
 class BirthdayCard(GreetingCard):

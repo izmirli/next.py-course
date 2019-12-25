@@ -111,7 +111,7 @@ for twenties in range(4):
                 this_sum = twenties * 20 + tans * 10 + fifths * 5 + ones
                 if TARGET == this_sum:
                     op_count += 1
-                    print(f'{twenties} * 20 + {tans} * 10 + {fifths} * 5 + {ones} * 1')
+                    print(f'{twenties}x20$ + {tans}x10$ + {fifths}x5$ + {ones}x1$')
                 elif TARGET < this_sum:
                     break
 

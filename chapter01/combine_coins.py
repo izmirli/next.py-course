@@ -54,11 +54,15 @@ print((lambda y, x: x in y) ([1, 5, 6, 9], 9))
 
 #
 def is_prime(number):
-    return 0 == len([n for n in range(2, number) if number % n == 0])
+    return 0 == len([n for n in range(2, number // 2) if number % n == 0])
 
 
-print(f'is_prime(42): {is_prime(42)}')
-print(is_prime(43))
+def is_prime_r(number):
+    return 0 != functools.reduce(lambda a, b: min(a, b), map(lambda x: number % x, range(2, number // 2)))
+
+
+print(f'\nis_prime(42): {is_prime(42)}; is_prime_r(42): {is_prime_r(42)}.')
+print(f'is_prime(43): {is_prime(43)}; is_prime_r(43): {is_prime_r(43)}.\n')
 
 
 def is_funny(string: str):
